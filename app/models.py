@@ -45,16 +45,16 @@ class User(UserMixin,db.Model):
 
     def __init__(self, email, email_confirmation_sent_on=None,):
         self.email=email
-        self.password=plaintext_password
+        # self.password=plaintext_password
         self.authenticated=False
         self.email_confirmation_sent_on=email_confirmation_sent_on
         self.email_confirmed=False
         self.email_confirmed_on=None
         
 
-    @password.setter
-    def set_password(self, plaintext_password):
-    self._password=bcrypt.generate_password_hash(plaintext_password)
+    # @password.setter
+    # def set_password(self, plaintext_password):
+        # self._password=bcrypt.generate_password_hash(plaintext_password)
 
 
     def __repr__(self): 

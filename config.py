@@ -6,7 +6,8 @@ class Config:
     '''
 
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/recipe'
-
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SECRET_KEY = '\xf3\x00Kd\xbfZ\x9b\xe2W\xe2\xa7\xe0\xe3\xbc\n\xd3j\xd2\xa4Q\xcb\x9f./'
     pass
 
 
